@@ -59,9 +59,8 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/command_undead)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravemark)
-
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/tame_undead)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead_formation/necromancer)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead/necromancer)
-
 		H.mind.adjust_spellpoints(12)
 	wretch_select_bounty(H)
