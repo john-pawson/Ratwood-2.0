@@ -473,9 +473,6 @@
 	if(special == "lich" || special == "vampire lord")
 		return TRUE
 
-	if(assigned == "bogguard")
-		return TRUE
-
 	return FALSE
 
 /obj/structure/trap/bogtrap/proc/has_required_trigger_trait(mob/living/H)
@@ -501,9 +498,7 @@
 	var/assigned = lowertext("[H.mind.assigned_role]")
 	var/special  = lowertext("[H.mind.special_role]")
 
-	return (assigned == "bandit" || special == "bandit" \
-		|| assigned == "bogguard" \
-		|| assigned == "warden" || special == "warden")
+	return (assigned == "bandit" || special == "bandit" )
 
 /obj/structure/trap/bogtrap/proc/show_personal_reveal(mob/user)
 	if(!user || !user.client)
