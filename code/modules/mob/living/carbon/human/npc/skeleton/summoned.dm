@@ -6,7 +6,6 @@
 	skel_outfit = /datum/outfit/job/roguetown/npc/skeleton/npc/summoned
 
 
-
 /datum/outfit/job/roguetown/npc/skeleton/npc/summoned/pre_equip(mob/living/carbon/human/H)
 	.=..()
 	H.STASTR = 14
@@ -47,7 +46,7 @@
 		var/mob/living/L = target
 		if(L == caster)
 			return FALSE
-		if(L.faction && (L.faction in friendly_factions))
+		if(L.faction && (L.faction in faction))
 			return FALSE
 	return ..() // fall back to normal targeting
 

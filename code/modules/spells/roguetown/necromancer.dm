@@ -195,10 +195,8 @@
 	qdel(sacrifice)
 	S.caster = user
 	if(user.faction)
-		S.friendly_factions = list("[user.mind.current.real_name]_faction")
-		S.faction = list("[user.mind.current.real_name]_faction")
+		S.faction |= list("[user.mind.current.real_name]_faction")
 	S.set_command("follow", user)
-	S.faction = "[user.name]_faction"
 
 	T.visible_message(span_notice("<b>[user]</b> raises a skeleton from the ground!"))
 	S.receive_command_text("rises and bows to its master.")
